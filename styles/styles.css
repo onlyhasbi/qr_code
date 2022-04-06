@@ -17,13 +17,6 @@ body {
   font-size: 15px;
 }
 
-body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 h1,
 h2,
 h3 {
@@ -33,6 +26,13 @@ h3 {
 p,
 span {
   color: var(--clr-text);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
