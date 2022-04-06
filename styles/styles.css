@@ -1,44 +1,70 @@
+:root {
+  --bg-white: hsl(0, 0%, 100%);
+  --bg-body: hsl(212, 45%, 89%);
+  --clr-text: hsl(220, 15%, 55%);
+  --clr-heading: hsl(218, 44%, 22%);
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
+html,
 body {
   font-family: "Outfit", sans-serif;
-  background-color: hsl(212, 45%, 89%);
+  background-color: var(--bg-body);
+  font-size: 15px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-heading);
+}
+
+p,
+span {
+  color: var(--clr-text);
 }
 
 .container {
-  background-color: hsl(0, 0%, 100%);
-  width: 15%;
-  padding: 1em 1em 2em 1em;
-  text-align: center;
-  margin: 0 auto;
-  border-radius: 1em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: var(--bg-white);
+  padding: 1em 1em 2.6em 1em;
+  border-radius: 1.3rem;
+  width: 23.6%;
+  box-sizing: border-box;
 }
 
-.qrImage {
-  border-radius: 0.5em;
+.image img {
   width: 100%;
+  border-radius: 0.75rem;
 }
 
-.title,
-.text {
-  margin-top: 1em;
+.content {
+  width: 89%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .title {
-  color: hsl(218, 44%, 22%);
-  margin-top: 1em;
-  font-size: 1.1em;
+  color: var(--clr-heading);
+  margin-top: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.text {
-  margin-trim: 1.5;
-  color: hsl(220, 15%, 55%);
-  font-size: 0.8em;
+.description {
+  color: var(--clr-text);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  letter-spacing: 0.01rem;
 }
