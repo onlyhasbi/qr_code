@@ -8,13 +8,14 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
   font-family: "Outfit", sans-serif;
   background-color: var(--bg-body);
-  font-size: 15px;
+  font-size: 62.5%;
 }
 
 h1,
@@ -23,54 +24,59 @@ h3 {
   color: var(--clr-heading);
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 p,
 span {
   color: var(--clr-text);
 }
 
-main {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+p {
+  letter-spacing: 0.02rem;
 }
 
 .card {
   background-color: var(--bg-white);
-  padding: 1em 1em 2.6em 1em;
-  border-radius: 1.3rem;
-  width: 23.6%;
-  box-sizing: border-box;
+  padding: 1.55rem 1.55rem 4rem 1.6rem;
+  border-radius: 2rem;
+  width: 32rem;
+  max-width: 100%;
+  box-shadow: 0 3rem 2rem 0 rgba(0, 0, 0, 0.05);
+  margin: 8.6rem auto;
 }
 
-.card-image img {
-  width: 100%;
-  border-radius: 0.75rem;
+.card-image {
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
 .card-content {
-  width: 89%;
+  width: 92%;
   margin: 0 auto;
   text-align: center;
 }
 
 .card-title {
   color: var(--clr-heading);
-  margin-top: 1.25rem;
-  font-size: 1.5rem;
+  margin-top: 2.2rem;
+  font-size: 2.22rem;
   font-weight: 700;
 }
 
 .card-description {
   color: var(--clr-text);
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  margin-top: 1rem;
-  letter-spacing: 0.01rem;
+  margin-top: 1.5rem;
+  /* letter-spacing: 0.02rem; */
 }
 
-@media (max-width: 480px) {
+@media screen and (min-width: 800px) {
   .card {
-    width: 85%;
+    margin-top: 15.3rem;
+    margin-bottom: 15.3rem;
   }
 }
